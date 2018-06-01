@@ -1,0 +1,21 @@
+﻿<html>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://pubnub.github.io/eon/v/eon/1.0.0/eon.js"></script>
+<link type="text/css" rel="stylesheet" href="https://pubnub.github.io/eon/v/eon/1.0.0/eon.css"/>
+<h1 id="body-spline"></h1>
+<div class="row">
+<script>
+    eon.chart({
+        pubnub: PUBNUB,
+        channels: ['eon-chart'],
+        limit: 20,
+        generate: {
+            bindto: '#body-spline'
+        }
+    });
+</script>
+
+</div>
+</body>
+</html>
